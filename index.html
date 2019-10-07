@@ -1,0 +1,79 @@
+<!doctype html> 
+<html>
+<head>
+	<title>Hero Game</title>
+	<link rel="stylesheet" href="assets/style.css"></style>
+</head>
+<body>
+	<div class="gameContainer">
+		<div class="header">
+			<div class="flexContainer">
+				<div class="playerStatus">
+					Orderus
+					<div class="hpBarContainer">
+						<div id="heroHp" class="hpBar" style="float:left"></div>
+						<div class="value" style=""></div>
+					</div>
+				</div>		
+				<div id="gameInfo" class="gameInfo">
+					Round <span id="roundNumber">0</span><br>
+					Next to attack <span id="attacker"></span>
+				</div>		
+				<div class="playerStatus" style="text-align: right">
+					Beast
+					<div class="hpBarContainer" style="text-align: right;"> 
+						<div id="beastHp" class="hpBar" style="float:right"></div>
+						<div class="value" style="right:10px;">3</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+		<div class="fightContainer">
+			<div class="flexContainer">
+				<div class="heroContainer">
+					<div class="heroImage">
+						<img src="assets/images/Hero.png">
+					</div>
+					<div id="herostats" class="heroStats">
+						health : <span id="heroHealth"></span><br>
+						strength : <span id="heroStrength"></span><br>
+						defence : <span id="heroDefence"></span><br>
+						speed : <span id="heroSpeed"></span><br>
+						luck : <span id="heroLuck"></span><br>
+					</div>
+				</div>
+				<div id="roundInfo" class="roundInfo">
+
+				</div>
+				<div class="heroContainer">
+					<div class="heroImage">
+						<img src="assets/images/monster.png">
+					</div>
+					<div id="beastStats" class="heroStats">
+						health : <span id="beastHealth"></span><br>
+						strength : <span id="beastStrength"></span><br>
+						defence : <span id="beastDefence"></span><br>
+						speed : <span id="beastSpeed"></span><br>
+						luck : <span id="beastLuck"></span><br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="buttonsContainer">
+			<button class="button" id="start">restart!</button>
+			<button class="button" id="newRound">next round</button>	
+		</div>
+	</div>
+	<p style="font-size: 10px; font-family:monospace;">press "c" to toggle debug.</p>
+	<div id="console" class="console">
+		<div id="gameState1"></div>
+		<div id="gameState2"></div>
+		<div id="gameState3"></div>
+	</div>
+
+
+	<script src="assets/js/jquery-1.11.0.min.js"></script>
+	<script src="assets/js/game.js"></script>
+</body>
+</html>
+ 

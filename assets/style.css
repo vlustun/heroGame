@@ -1,0 +1,103 @@
+body{
+	font-family: fantasy;
+	font-size:20px;
+}
+.gameContainer{
+	position:relative;
+	top:50px;
+	width:900px;
+	margin:0 auto;
+	height:600px;
+}
+
+.header{
+	padding:5px;
+}
+
+.flexContainer{
+	display:flex;
+	position:relative;
+	justify-content: space-between;
+}
+
+.gameInfo{
+	text-align:center;
+}
+
+.heroImage{
+	width:250px;
+	display:block;
+	border-radius:20px; 
+	padding:10px;
+	text-align: center;
+}
+
+.heroStats{
+	padding:10px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.heroImage img{
+	width:200px;
+
+}
+
+.playerStatus{
+	padding:5px;
+}
+
+.hpBarContainer{
+	width:270px;
+	height:20px;
+	border:2px solid black;
+	line-height: 20px;
+}
+
+.hpBarContainer .hpBar
+{
+	height:20px;
+	width: 28%;
+	background:red;
+}
+
+.hpBarContainer .value{
+	padding:0 10px;
+	position:absolute;
+}
+
+.fightContainer{
+	padding:10px;
+	height:400px;
+}
+
+.heroContainer{
+	border:2px solid pink;
+}
+
+.roundInfo{
+	width:200px;
+}
+
+
+.console{
+	display:none;
+	margin-top:70px;
+	font-size:12px;
+	font-family:monospace;
+}
+
+
+.buttonsContainer{
+	width:420px;
+	margin:40px auto 0 auto;
+}
+
+.button{
+	width:200px;
+	margin:0 auto;
+	height:40px;
+	background:red;
+	color:white;
+	cursor:pointer;
+}
